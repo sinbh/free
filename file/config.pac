@@ -84,7 +84,7 @@ var SuffixDirectMap = {
 };
 var SuffixProxyMap = {};
 var MatchProxies = ["google","twitter.com","ytimg.com","ggpht.com","twimg.com","tellapart.com","facebook.com","fbcdn.net",
-"wikipedia.org","gmail.com"];
+"wikipedia.org","gmail.com","fanqiang"];
 
 var MatchDirects = ["360buy", "alipay", "baidu", "taobao"];
 var Direct = "DIRECT;";
