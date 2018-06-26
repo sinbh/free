@@ -80,6 +80,9 @@ var SuffixDirectMap = {
     "icloud.com": 1,
     "itunes.com": 1,
     "me.com": 1,
+    "bing.com": 1,
+    "csdn.net": 1,
+    "cnblogs.com": 1,
     "mzstatic.com": 1
 };
 var SuffixProxyMap = {};
