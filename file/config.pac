@@ -83,7 +83,8 @@ var SuffixDirectMap = {
     "bing.com": 1,
     "csdn.net": 1,
     "cnblogs.com": 1,
-    "mzstatic.com": 1
+    "mzstatic.com": 1,
+    "mozilla.com":1
 };
 var SuffixProxyMap = {};
 var MatchProxies = ["google","twitter.com","ytimg.com","ggpht.com","twimg.com","tellapart.com","facebook.com","fbcdn.net",
