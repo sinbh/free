@@ -115,7 +115,7 @@ function FindProxyForURL(url, host) {
     }
     for (var i = 0; i < MatchDirects.length; ++i) {
         if (host.indexOf(MatchDirects[i]) != -1) {
-            return Direct;
+            return Proxy;
         }
     }
     return Proxy;
