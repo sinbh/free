@@ -83,16 +83,15 @@ var SuffixDirectMap = {
     "bing.com": 1,
     "csdn.net": 1,
     "cnblogs.com": 1,
-    "mzstatic.com": 1,
-    "mozilla.com":1,
-    "youtube.com":1,
-    "googlevideo.com":1
+    "mzstatic.com": 1
 };
 var SuffixProxyMap = {};
-var MatchProxies = ["google","twitter.com","ytimg.com","ggpht.com","twimg.com","tellapart.com","facebook.com","fbcdn.net",
-"wikipedia.org","gmail.com","fanqiang","appspot.com","gist.github.com","duotai.love","yahoo.co.jp","yimg.jp","apps.who.int"];
 
-var MatchDirects = ["360buy", "alipay", "baidu", "taobao","googlevideo","youtube"];
+var MatchProxies = ["youtube","google","twitter.com","ytimg.com","ggpht.com","twimg.com","tellapart.com","facebook","fbcdn",
+"wikipedia.org","gmail.com","fanqiang","appspot.com","github","duotai.love","yahoo","yimg.jp","apps.who.int",
+"m3global","myfonts","m3globalresearch","doubleclick.net"];
+
+var MatchDirects = ["360buy", "alipay", "baidu", "taobao"];
 var Direct = "DIRECT;";
 var GeoProxy = "PROXY 211.103.157.176:62688;";
 var Proxy = "PROXY 211.103.157.176:62688;";
@@ -111,15 +110,15 @@ function FindProxyForURL(url, host) {
         m = h.indexOf(".") + 1;
         h = h.slice(m);
     } while ( m >= 1 );
-    for (var i = 0; i < MatchDirects.length; ++i) {
-        if (host.indexOf(MatchDirects[i]) != -1) {
-            return Direct;
-        }
-    }
     for (var i = 0; i < MatchProxies.length; ++i) {
         if (host.indexOf(MatchProxies[i]) != -1) {
             return Proxy;
         }
     }
-    return Direct;
+    for (var i = 0; i < MatchDirects.length; ++i) {
+        if (host.indexOf(MatchDirects[i]) != -1) {
+            return Proxy;
+        }
+    }
+    return Proxy;
 }
