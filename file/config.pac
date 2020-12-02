@@ -93,7 +93,7 @@ var MatchProxies = ["google","twitter.com","ytimg.com","ggpht.com","twimg.com","
 "wikipedia.org","gmail.com","fanqiang","appspot.com","github","duotai.love","yahoo","yimg.jp","apps.who.int",
 "m3global","myfonts","m3globalresearch","doubleclick.net","jquery.com"];
 
-var MatchDirects = ["360buy", "alipay", "baidu", "taobao","googlevideo","youtube"];
+var MatchDirects = ["360buy", "alipay", "baidu", "taobao","googlevideo","youtube","kydev","medlive","meddb","medhos"];
 var Direct = "DIRECT;";
 var GeoProxy = "PROXY 211.103.157.176:62688;";
 var Proxy = "PROXY 211.103.157.176:62688;";

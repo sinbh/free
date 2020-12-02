@@ -89,9 +89,9 @@ var SuffixProxyMap = {};
 
 var MatchProxies = ["youtube","google","twitter.com","ytimg.com","ggpht.com","twimg.com","tellapart.com","facebook","fbcdn",
 "wikipedia.org","gmail.com","fanqiang","appspot.com","github","duotai.love","yahoo","yimg.jp","apps.who.int",
-"m3global","myfonts","m3globalresearch","doubleclick.net"];
+"m3global","myfonts","m3globalresearch","doubleclick.net","googlevideo","jquery.com"];
 
-var MatchDirects = ["360buy", "alipay", "baidu", "taobao"];
+var MatchDirects = ["360buy", "alipay", "baidu", "taobao","kydev","medlive","meddb","medhos"];
 var Direct = "DIRECT;";
 var GeoProxy = "PROXY 211.103.157.176:62688;";
 var Proxy = "PROXY 211.103.157.176:62688;";
