@@ -110,15 +110,15 @@ function FindProxyForURL(url, host) {
         m = h.indexOf(".") + 1;
         h = h.slice(m);
     } while ( m >= 1 );
+    for (var i = 0; i < MatchDirects.length; ++i) {
+            if (host.indexOf(MatchDirects[i]) != -1) {
+                return Direct;
+            }
+        }
     for (var i = 0; i < MatchProxies.length; ++i) {
         if (host.indexOf(MatchProxies[i]) != -1) {
             return Proxy;
         }
     }
-    for (var i = 0; i < MatchDirects.length; ++i) {
-        if (host.indexOf(MatchDirects[i]) != -1) {
-            return Proxy;
-        }
-    }
-    return Proxy;
+    return Direct;
 }
